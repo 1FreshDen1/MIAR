@@ -31,6 +31,7 @@ jobs:
     - name: Push image
       run: docker push cr.yandex/${{ secrets.YC_REGISTRY_ID }}/catalog-service:latest
 
+
   deploy:
     name: Deploy Serverless Container
     runs-on: ubuntu-latest
