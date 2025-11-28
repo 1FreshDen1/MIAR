@@ -26,7 +26,7 @@ jobs:
       with:
         registry: cr.yandex
         username: oauth
-        password: ${{ secrets.YC_OAUTH_TOKEN }}
+        password: ${{ secrets.YC_KEYS }}
 
     - name: Push image
       run: docker push cr.yandex/${{ secrets.YC_REGISTRY_ID }}/catalog-service:latest
